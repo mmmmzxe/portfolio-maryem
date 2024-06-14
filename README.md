@@ -1,4 +1,5 @@
-![MacBook Air - 2 (3)](/../react_portfolio_2-main/src/assets/1.png)
+1](https://github.com/mmmmzxe/portfolio-maryem/assets/112415326/1dc0e846-429e-4dbd-8998-cb3f568e36a8)
+![2](https://github.com/mmmmzxe/portfolio-maryem/assets/112415326/15cb7246-15f4-4bab-a10b-a9e9d25a48e5)
 
 
 # React Portfolio 2
