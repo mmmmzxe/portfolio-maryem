@@ -8,6 +8,7 @@ import reactjs from "./assets/images/Skills/react.png";
 import github from './assets/images/Skills/git.jpg'
 import firebase from './assets/images/Skills/f.png'
 import wordpress from './assets/images/Skills/w.png';
+import Next from './assets/images/Skills/nextjs.png';
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/2.png";
 import services_logo3 from "./assets/images/Services/3.png";
@@ -24,7 +25,7 @@ import project10 from "./assets/images/projects/10.png";
 import project11 from "./assets/images/projects/11.png";
 import project12 from "./assets/images/projects/12.png";
 import project13 from "./assets/images/projects/13.png";
-import pdf from './assets/images/maryem mostafa.pdf'
+import pdf from './assets/images/Maryem .pdf'
 import va from '../public/10.png'
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
@@ -88,13 +89,13 @@ export const content = {
     skills_content: [
       {
         name: "Mobile Apps ",
-        para: "Using Flutter",
+        para: "Flutter",
         logo: flutter,
       },
     
       {
         name: "Front-End",
-        para: "Using React js",
+        para: " React Js",
         logo: reactjs,
       },
       {
@@ -121,6 +122,10 @@ export const content = {
         name: "Firebase",
         para: "",
         logo: firebase,
+      },   {
+        name: "Front-End",
+        para: "Next Js",
+        logo: Next,
       },
  
     ],
