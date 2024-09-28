@@ -41,7 +41,9 @@ const Navbar = () => {
           showMenu ? "bottom-10" : "bottom-[-100%]"
         }`}
       >
+        
         {nav.map((item, i) => (
+          
           <a
             key={i}
             href={item.link}

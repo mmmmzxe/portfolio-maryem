@@ -12,18 +12,21 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Splash from "./components/splash";
 import RecentProjects from "./components/projects";
-
+import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
+
   useEffect(() => {
     Aos.init({
       duration: 1800,
       offset: 100,
       disable: "mobile",
     });
+
+
   }, []);
   return (
-    <div className="bg-black w-full overflow-hidden">
+    <div  className="bg-black w-full overflow-hidden">
    
    <Navbar />
    

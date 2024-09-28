@@ -3,9 +3,8 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      Poppins: "Poppins",
-      Paprika: "Paprika",
-      Inria: "Inria Serif",
+
+      SFPro: ["SF Pro Display"], // Reference the custom font here
     },
     container: {
       center: true,
@@ -24,6 +23,15 @@ module.exports = {
       },
       dropShadow: {
         primary: "-5px 35px 40px rgba(223, 229, 236, 0.9)",
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+      },
+      animation: {
+        float: 'float 5s ease-in-out infinite',
       },
     },
   },

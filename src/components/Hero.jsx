@@ -1,11 +1,14 @@
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
+import { gsap } from "gsap";
+
 const Hero = () => {
   const { hero } = content;
 
+
   return (
-    <section  className="overflow-hidden">
+    <section  className="overflow-hidden hero">
       <div className="min-h-[100] relative flex md:flex-row flex-col  justify-center items-center">
         <div
           data-aos="slide-left"

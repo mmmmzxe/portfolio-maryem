@@ -39,7 +39,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="min-h-fit m-3" >
+    <section className="Skills min-h-fit m-3" >
       {/* modal */}
     
 

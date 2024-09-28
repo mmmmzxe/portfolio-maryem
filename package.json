@@ -13,11 +13,16 @@
     "@emailjs/browser": "^3.9.1",
     "aos": "^2.3.4",
     "framer-motion": "^11.2.10",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.6.0",
     "react-modal": "^3.16.1",
+    "react-scroll": "^1.9.0",
+    "react-tsparticles": "^2.12.2",
     "swiper": "^8.4.4"
   },
   "devDependencies": {
