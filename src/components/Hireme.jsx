@@ -32,7 +32,7 @@ const Hireme = () => {
           
           <div
             data-aos="fade-left"
-            className="border-2 border-dark_primary max-w-l
+            className="border-2 m-auto border-dark_primary max-w-l
            p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] flex"
           >
             

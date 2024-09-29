@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./Layouts/Navbar";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
-
+import RecentProjects from './components/projects'
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import { useEffect } from "react";
@@ -11,8 +11,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Splash from "./components/splash";
-import RecentProjects from "./components/projects";
-import LocomotiveScroll from "locomotive-scroll";
+
 
 const App = () => {
 
@@ -26,7 +25,8 @@ const App = () => {
 
   }, []);
   return (
-    <div  className="bg-black w-full overflow-hidden">
+  
+      <div className=" bg-black w-full overflow-hidden scrollbar-thin scrollbar-thumb-pink-600 scrollbar-track-gray-200 overflow-y-scroll ">
    
    <Navbar />
    

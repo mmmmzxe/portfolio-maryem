@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 const Splash = ()=> {
 
   return (
-    <div id="home" className=" items-center h-full  p-10 m-5 justify-center text-center  gap-1 flex flex-col sm:flex-row overflow-hidden  ">
+    <div id="home" className=" items-center h-[100vh]  p-10 m-5 justify-center text-center  gap-1 flex flex-col sm:flex-row overflow-hidden  ">
   
  
    

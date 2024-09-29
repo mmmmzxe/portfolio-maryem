@@ -10,17 +10,36 @@
   font-weight: bold;
   font-style: normal;
   }
+/* Custom Scrollbar for Firefox and WebKit Browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d21860; /* Customize scrollbar color */
+  border-radius: 10px;
+  border: 2px solid transparent; /* Optional: Add space around the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* Customize scrollbar background */
+  border-radius: 10px;
+}
+
+html {
+  scrollbar-width: thin; /* Firefox scrollbar width */
+  scrollbar-color: #d21860 #f1f5f9; /* Firefox scrollbar color and background */
+  scroll-behavior: smooth;
+}
+
+  
   body{
     font-family: 'SF Pro Display';
  
 
   }
 
-  
-  html, body {
-  scroll-behavior: smooth;
- 
-  }
   
 
 
@@ -60,7 +79,7 @@
   button {
      color: white
   }
-  input,
+  
   textarea {
     @apply bg-transparent outline-none ;
   }
@@ -83,7 +102,14 @@
 a:hover{
 transition: 0.5s ease-in-out;
 }
-.card {
+input{
+  color: #d21860;
+
+}
+input:focus{
+  background: #d21860;
+}
+.cad {
   width:48%;
   height: 310px;
   position: relative;
@@ -92,7 +118,7 @@ transition: 0.5s ease-in-out;
 
 
 @media (width < 750px) {
-  .card {
+  .cad {
    width: 100%;
   
   }
@@ -104,7 +130,7 @@ transition: 0.5s ease-in-out;
 
 
 
-.card .profile-pic {
+.cad .profile-pic {
   position: absolute;
   width: 100%;
   width: calc(100% - 6px);
@@ -118,7 +144,7 @@ transition: 0.5s ease-in-out;
   transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
 }
 
-.card .profile-pic img {
+.cad .profile-pic img {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
@@ -130,7 +156,7 @@ transition: 0.5s ease-in-out;
 
 
 
-.card .bottom {
+.cad .bottom {
   position: absolute;
   bottom: 3px;
   left: 3px;
@@ -144,7 +170,7 @@ transition: 0.5s ease-in-out;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
-.card .bottom .content {
+.cad .bottom .content {
   position: absolute;
   bottom: 0;
   left: 1.5rem;
@@ -154,24 +180,24 @@ transition: 0.5s ease-in-out;
 
 }
 
-.card .bottom .content .name {
+.cad .bottom .content .name {
   display: block;
   font-size: 1.2rem;
   color: white;
   font-weight: bold;
 }
 
-.card .bottom .content .about-me {
+.cad .bottom .content .about-me {
   visibility: hidden;
   font-size: 0.7rem;
   color: white;
   margin-top: 1rem;
 }
 
-.card:hover .bottom .content .about-me{
+.cad:hover .bottom .content .about-me{
   visibility: visible;
 }
-.card .bottom .bottom-bottom {
+.cad .bottom .bottom-bottom {
   position: absolute;
   bottom: 1rem;
   left: 1.5rem;
@@ -181,23 +207,23 @@ transition: 0.5s ease-in-out;
   justify-content: space-between;
 }
 
-.card .bottom .bottom-bottom .social-links-container {
+.cad .bottom .bottom-bottom .social-links-container {
   display: flex;
   gap: 1rem;
 }
 
-.card .bottom .bottom-bottom .social-links-container svg {
+.cad .bottom .bottom-bottom .social-links-container svg {
   height: 20px;
   fill: white;
   filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
 }
 
-.card .bottom .bottom-bottom .social-links-container svg:hover {
+.cad .bottom .bottom-bottom .social-links-container svg:hover {
  
   transform: scale(1.2);
 }
 
-.card .bottom .bottom-bottom .button {
+.cad .bottom .bottom-bottom .button {
   background: white;
   color: #d21860;
   border: none;
@@ -207,26 +233,26 @@ transition: 0.5s ease-in-out;
   box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
 }
 
-.card .bottom .bottom-bottom .button:hover {
+.cad .bottom .bottom-bottom .button:hover {
   background: #d21860;
   color: white;
   
 
 }
 
-.card:hover {
+.cad:hover {
   border-top-left-radius: 55px;
   
 }
 
-.card:hover .bottom {
+.cad:hover .bottom {
   top: 20%;
   
   border-radius: 80px 29px 29px 29px;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
-.card:hover .profile-pic {
+.cad:hover .profile-pic {
   width: 110px;
   height: 110px;
   aspect-ratio: 1;
@@ -240,13 +266,13 @@ background: black;
   transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
 }
 
-.card:hover .profile-pic:hover {
+.cad:hover .profile-pic:hover {
   transform: scale(1.2);
   border-radius: 0px;
   
 }
 
-.card:hover .profile-pic img {
+.cad:hover .profile-pic img {
   transform: scale(2.5);
 
   transition: all 0.5s ease-in-out 0.5s;
@@ -257,7 +283,7 @@ background: black;
   align-items: center;
 
 }
-.card:hover .profile-pic .code {
+.cad:hover .profile-pic .code {
   transform: scale(1.8);
   -o-object-position: 0px 25px;
   object-position: 25px;
