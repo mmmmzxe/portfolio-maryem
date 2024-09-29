@@ -52,6 +52,7 @@ const project_content = [
     title: " Where Tech ",
     image: project7,
     type: "web",
+    path2:"https://wheretech.org/",
     tech: "Using React Js & Tailwind Css Framework | animate.css , aos , flag-icons , il8next , il8next-browser-languagedetector , il8next-http-backend , js-cookie , react-icons , react-whatsapp , swiper , react-router-dom , react-responsive-carousel , react-on-screen , tailwindcss",
     path: "https://www.linkedin.com/posts/mmmmzxe_frontabrend-react-html-activity-7206666715001204736-r3-_?utm_source=share&utm_medium=member_desktop",
   },

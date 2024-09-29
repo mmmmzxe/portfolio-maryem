@@ -111,7 +111,7 @@ input:focus{
 }
 .cad {
   width:48%;
-  height: 310px;
+  height: 350px;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
@@ -120,6 +120,7 @@ input:focus{
 @media (width < 750px) {
   .cad {
    width: 100%;
+   height: 370px;
   
   }
 }
@@ -175,7 +176,7 @@ input:focus{
   bottom: 0;
   left: 1.5rem;
   right: 1.5rem;
-  height: 160px;
+  height: 220px;
 
 
 }
@@ -191,7 +192,7 @@ input:focus{
   visibility: hidden;
   font-size: 0.7rem;
   color: white;
-  margin-top: 1rem;
+  margin-top: .4rem;
 }
 
 .cad:hover .bottom .content .about-me{

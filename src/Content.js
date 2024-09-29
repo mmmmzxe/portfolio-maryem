@@ -197,11 +197,7 @@ img:va
         icon: GrMail,
         link: "mailto:maryem.mostafa00@gmail.com",
       },
-      {
-        text: "01030482371",
-        icon: MdCall,
-        link: "https://wa.me/+201030482371",
-      },
+   
       {
         text: "mmmmzxe",
         icon: BsInstagram,
