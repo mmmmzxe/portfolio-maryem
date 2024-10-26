@@ -21,19 +21,19 @@ const Hireme = () => {
             src={Hireme.image1}
             alt="..."
             data-aos="fade-right"
-            className="max-w-sm md:block hidden mr-7"
+            className="max-w-md md:block hidden "
           />
           <img
             src={Hireme.image2}
             data-aos="fade-up"
             alt="..."
-            className="max-w-sm md:hidden"
+            className="max-w-md md:hidden"
           />
           
           <div
             data-aos="fade-left"
-            className="border-2 m-auto border-dark_primary max-w-l
-           p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] flex"
+            className="border-2 w-1/2 m-auto border-dark_primary max-w-l
+           p-6 shadow-sm rounded-xl rounded-br-[8rem]  flex"
           >
             
             <div>
@@ -53,9 +53,10 @@ const Hireme = () => {
            <p>{Hireme.exp2}</p>
            <p>{Hireme.exp3}</p>
            <p>{Hireme.exp4}</p>
+           <p>{Hireme.exp6}</p>
            <p>{Hireme.exp5}</p></div></div>
             </div>
-            <div><img src={Hireme.image3} className="w-[120px]"></img></div>
+            <div className=""><img src={Hireme.image3} className="w-[150px]"></img></div>
           </div>
         </div>
       </div>

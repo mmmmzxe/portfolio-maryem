@@ -15,7 +15,7 @@ module.exports = {
         dark_primary: "white",
         bg_light_primary: "#F5F9FD",
         gray: "#B7C5D3",
-        t:"rgb(210, 24, 96)"
+        t:"rgb(238, 44, 118)"
       },
       backgroundImage: {
         primaryLinear: "linear-gradient(180deg, rgb(218, 19, 82) 0.48%, rgba(236, 96, 141, 0.578)  100%)",

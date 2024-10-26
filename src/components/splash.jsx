@@ -32,7 +32,7 @@ const Splash = ()=> {
               duration: 2,
               delay: 1.5,
             }}
-            className=" text-6xl t mb-9  text-center items-center font-black italic tracking-widest text-t"
+            className="lg:text-6xl text-4xl t mb-9  text-center items-center font-black italic tracking-widest text-t"
           >
            Hi I'm <span className='text-t text-7xl '>Maryem</span> ,
           </motion.div>

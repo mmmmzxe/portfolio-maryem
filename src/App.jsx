@@ -26,7 +26,7 @@ const App = () => {
   }, []);
   return (
   
-      <div className=" bg-black w-full overflow-hidden scrollbar-thin scrollbar-thumb-pink-600 scrollbar-track-gray-200 overflow-y-scroll ">
+      <div className="  ">
    
    <Navbar />
    

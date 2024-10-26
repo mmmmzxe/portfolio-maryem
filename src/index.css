@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #d21860; /* Customize scrollbar color */
+  background-color: #ee2c76; /* Customize scrollbar color */
   border-radius: 10px;
   border: 2px solid transparent; /* Optional: Add space around the thumb */
 }
@@ -29,14 +29,15 @@
 
 html {
   scrollbar-width: thin; /* Firefox scrollbar width */
-  scrollbar-color: #d21860 #f1f5f9; /* Firefox scrollbar color and background */
+  scrollbar-color: #ee2c76 #f1f5f9; /* Firefox scrollbar color and background */
   scroll-behavior: smooth;
 }
 
   
   body{
     font-family: 'SF Pro Display';
- 
+ background: black;
+ background-position:fixed;
 
   }
 
@@ -53,9 +54,9 @@ html {
   h4,
   h5,
   h6,
-  p,
+
   span {
-    @apply text-dark_primary;
+    color: white
   }
   h1 {
     @apply  lg:text-6xl text-3xl font-extrabold;
@@ -70,11 +71,11 @@ html {
     @apply md:text-4xl text-3xl !leading-relaxed ;
   }
   h6 {
-    @apply  font-bold text-[#253D57] leading-8;
+    @apply  font-bold  leading-8;
   }
 
   p {
-    @apply  text-[0.95rem];
+    @apply  text-[0.95rem];   color: white
   }
   button {
      color: white
@@ -103,15 +104,15 @@ a:hover{
 transition: 0.5s ease-in-out;
 }
 input{
-  color: #d21860;
+  color: #ee2c76;
 
 }
 input:focus{
-  background: #d21860;
+  background: #ee2c76;
 }
 .cad {
   width:48%;
-  height: 350px;
+  height: 430px;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
@@ -120,7 +121,7 @@ input:focus{
 @media (width < 750px) {
   .cad {
    width: 100%;
-   height: 370px;
+   height: 400px;
   
   }
 }
@@ -146,12 +147,9 @@ input:focus{
 }
 
 .cad .profile-pic img {
-  -o-object-fit: cover;
-  object-fit: cover;
   width: 100%;
   height: 100%;
-  -o-object-position: 0px 0px;
-  object-position: 0px 0px;
+
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -162,7 +160,7 @@ input:focus{
   bottom: 3px;
   left: 3px;
   right: 3px;
-  background: rgb(210, 24, 96);
+  background:#ee2c76 ;
   top: 80%;
   border-radius: 29px;
   z-index: 2;
@@ -183,14 +181,14 @@ input:focus{
 
 .cad .bottom .content .name {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
   font-weight: bold;
 }
 
 .cad .bottom .content .about-me {
   visibility: hidden;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: white;
   margin-top: .4rem;
 }
@@ -226,7 +224,7 @@ input:focus{
 
 .cad .bottom .bottom-bottom .button {
   background: white;
-  color: #d21860;
+  color: #ee2c76;
   border: none;
   border-radius: 20px;
   font-size: 0.6rem;
@@ -235,7 +233,7 @@ input:focus{
 }
 
 .cad .bottom .bottom-bottom .button:hover {
-  background: #d21860;
+  background: #ee2c76;
   color: white;
   
 
@@ -261,7 +259,7 @@ input:focus{
   left: 10px;
   border-radius: 50%;
   z-index: 3;
-  border: 7px solid #d21860;
+  border: 7px solid #ee2c76;
 background: black;
   box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
   transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
