@@ -250,6 +250,7 @@ export const project_content = [
     type: "web",
     tech: "Using next Js & Tailwind Css Framework | , Api Tmdbs , Login and register and forget password using api backend express js , Api country and channels, axios , Cookies, clsx , paypal , react-dropdown-menu , react label, next js - toast-notify ,react-youtube ,Swiper , react-icons , embla-carousel-react ",
     path: "https://github.com/mmmmzxe/Movies-1",
+    path2:"https://www.linkedin.com/posts/mmmmzxe_nextjs-web-tailwindcss-activity-7250378342946721792-RvsC?utm_source=share&utm_medium=member_desktop"
   },
   {
     title: " Where Tech ",
@@ -271,7 +272,8 @@ export const project_content = [
     image: project15,
     type: "web",
     tech: "Using React Js & scss Framework | ",
-    path: "https://github.com/mmmmzxe/Gps.git",
+    path: "https://github.com/mmmmzxe/Food.git",
+    path2: "https://foodrink.netlify.app/",
   },
   {
     title: "Jewelry store",
