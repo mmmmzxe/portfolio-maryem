@@ -41,6 +41,14 @@ import project12 from "./assets/images/projects/12.png";
 import project13 from "./assets/images/projects/13.png";
 import project14 from "./assets/images/projects/14.png";
 import project15 from "./assets/images/projects/15.png";
+import project16 from "./assets/images/projects/16.png";
+import project17 from "./assets/images/projects/17.png";
+import project18 from "./assets/images/projects/18.png";
+import project19 from "./assets/images/projects/19.png";
+import project20 from "./assets/images/projects/20.png";
+import project21 from "./assets/images/projects/21.png";
+import project22 from "./assets/images/projects/22.png";
+import project23 from "./assets/images/projects/23.png";
 export const content = {
  
   nav: [
@@ -192,11 +200,14 @@ img:va
    Grade: 3.5,
    final:'Special Needs Car (SNC) App | A+',
    exp:'GDSC Future Academy Core Team | Front-End Developer ,',
+   exp9:'Google Developer Groups Cairo Core Team ,',
    exp2:'IEEE Future Academy Core Team | Head Front-End ,',
    exp3:'TECH Geeks club | Head Front-end ,',
    exp4:'PIONEERS 180 | Head Front-End',
    exp5:'SHADY SYSTEM | Training Flutter 3 Months',
    exp6:'WHERE TECH | web dev 6 Months',
+   exp7:'NOT FOUND AGANCY | Front-End Developer ',
+   exp8:'BLACK HORSE | Front-End Instractor ',
 
  
    years:" Sep 2020 - Jun 2024",
@@ -244,50 +255,112 @@ img:va
  
 };
 export const project_content = [
+
   {
-    title: "Movies",
-    image: project14,
+    title: "Not Found Agency",
+    image: project16,
     type: "web",
-    tech: "Using next Js & Tailwind Css Framework | , Api Tmdbs , Login and register and forget password using api backend express js , Api country and channels, axios , Cookies, clsx , paypal , react-dropdown-menu , react label, next js - toast-notify ,react-youtube ,Swiper , react-icons , embla-carousel-react ",
-    path: "https://github.com/mmmmzxe/Movies-1",
-    path2:"https://www.linkedin.com/posts/mmmmzxe_nextjs-web-tailwindcss-activity-7250378342946721792-RvsC?utm_source=share&utm_medium=member_desktop"
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard",
+  
+   
+    path2:"https://notfound-agency.com/"
+  },
+  {
+    title: "Coffe Point",
+    image: project17,
+    type: "web",
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard ",
+    
+   
+    path2:"https://coffeepointegy.com/"
   },
   {
     title: " Where Tech ",
     image: project7,
     type: "web",
     path2:"https://wheretech.org/",
-    tech: "Using React Js & Tailwind Css Framework | animate.css , aos , flag-icons , il8next , il8next-browser-languagedetector , il8next-http-backend , js-cookie , react-icons , react-whatsapp , swiper , react-router-dom , react-responsive-carousel , react-on-screen , tailwindcss",
+    tech: "Using React Js & Tailwind Css Framework | Site ",
     path: "https://www.linkedin.com/posts/mmmmzxe_frontabrend-react-html-activity-7206666715001204736-r3-_?utm_source=share&utm_medium=member_desktop",
   },
   {
-    title: "Eagle-Iot GPS",
-    image: project5,
+    title: "Movies",
+    image: project14,
     type: "web",
-    tech: "Using React Js & Tailwind Css Framework | react-router-dom , email ,  swiper , tailwindcss , react-whatsapp",
-    path: "https://github.com/mmmmzxe/Gps.git",
+    tech: "Using next Js & Tailwind Css Framework | Site ",
+    path: "https://github.com/mmmmzxe/Movies-1",
+    path2:"https://www.linkedin.com/posts/mmmmzxe_nextjs-web-tailwindcss-activity-7250378342946721792-RvsC?utm_source=share&utm_medium=member_desktop"
   },
   {
-    title: "Food & Drink",
-    image: project15,
+    title: "Sharqy",
+    image: project18,
     type: "web",
-    tech: "Using React Js & scss Framework | ",
-    path: "https://github.com/mmmmzxe/Food.git",
-    path2: "https://foodrink.netlify.app/",
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard",
+    path2: "https://sharqyeg.com/",
+  },
+  {
+    title: "Elrawad Ibn Sina",
+    image: project19,
+    type: "web",
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard",
+    path2: "https://elrawad-ibn-sina.com/",
+  },
+  {
+    title: "Omar Roshdy",
+    image: project20,
+    type: "web",
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard",
+    path2: "https://omarroshdy.com/",
+  },
+  {
+    title: "Pearl Store",
+    image: project21,
+    type: "web",
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard",
+    path2: "https://pearl-store.net/",
+  },
+  {
+    title: "Rabea Mall",
+    image: project23,
+    type: "web",
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard",
+    path2: "https://rabeamall.com/",
+  },
+  {
+    title: "MFEI",
+    image: project22,
+    type: "web",
+    tech: "Using React Js & Tailwind Css Framework | Site && Dashboard ",
+    path2: "http://159.65.162.107/",
   },
   {
     title: "Jewelry store",
     image: project2,
     type: "web",
-    tech: "Using React JS & Tailwind Css Framework | postcss , autoprefixe , react-icons , swiper ,  tailwindcss   ",
-    path: "https://github.com/mmmmzxe/Jewelry-stor.git",
-    path2: "https://scandalous-tin.surge.sh/",
+    tech: "Using React JS & Tailwind Css Framework  | Site  ",
+    path: "https://github.com/mmmmzxe/e-jewelry.git",
+    path2: "https://jewelrys.netlify.app/",
+  },
+
+  {
+    title: "Food & Drink",
+    image: project15,
+    type: "web",
+    tech: "Using React Js & scss Framework | Site ",
+    path: "https://github.com/mmmmzxe/Food.git",
+    path2: "https://foodrink.netlify.app/",
+  },
+  {
+    title: "Eagle-Iot GPS",
+    image: project5,
+    type: "web",
+    tech: "Using React Js & Tailwind Css Framework | Site" ,
+    path: "https://github.com/mmmmzxe/Gps.git",
   },
   {
     title: "Jewelry App",
     image: project3,
     type: "app",
-    tech: "Using Flutter | google_nav_bar , google_fonts , email_otp , firebase_auth , firebase_core , icons_flutter,  provider",
+    tech: "Using Flutter ",
     path: "https://github.com/mmmmzxe/jewelleryapp.git",
     path2:
       "https://www.linkedin.com/posts/mmmmzxe_flutter-flutterdeveloper-firebase-activity-7092230426236194816-WZCJ?utm_source=share&utm_medium=member_desktop",
@@ -297,7 +370,7 @@ export const project_content = [
   {
     title: "Helwan University",
     image: project6,
-    tech: "  framer-motion , react ,react-icons , react-scroll ,tailwindcss",
+    tech: " Using React Js & Tailwind Css Framework  | Site",
     path: "",
     type: "web",
   },
@@ -306,14 +379,14 @@ export const project_content = [
     title: " Books store",
     image: project8,
     type: "web",
-    tech: " Using React Js & Tailwind Css Framework | react-icons , react-slick , slick-carousel , eslint , eslint-plugin-react , eslint-plugin-react-hooks , eslint-plugin-react-refresh , postcss , tailwindcss , vite ,",
+    tech: " Using React Js & Tailwind Css Framework | Site",
     path: "https://github.com/mmmmzxe/Book.git",
   },
   {
     title: "FurniShop",
     image: project9,
     type: "web",
-    tech: " Using React Js & Tailwind Css Framework | autoprefixer ,postcss , react-icons , swiper , tailwindcss",
+    tech: " Using React Js & Tailwind Css Framework | Site",
     path: "https://github.com/mmmmzxe/furniture.git",
     path2:
       "https://www.linkedin.com/posts/mmmmzxe_react-reactjs-frontend-activity-7054302975850086400-O8j8?utm_source=share&utm_medium=member_desktop",
@@ -323,7 +396,7 @@ export const project_content = [
     title: "Clothes Shop",
     image: project10,
     type: "app",
-    tech: "Using Futter | flutter_svg , google_fonts , line_icons  ",
+    tech: "Using Futter  ",
     path: "https://github.com/mmmmzxe/clothes-Flutter.git",
     path2:
       "https://www.linkedin.com/posts/mmmmzxe_flutterdeveloper-activity-7056454632599937024-5d0M?utm_source=share&utm_medium=member_desktop",
@@ -332,7 +405,7 @@ export const project_content = [
     title: "Coffe Shop",
     type: "app",
     image: project11,
-    tech: "Using Futter | google_fonts ,flutter_svg , line_icons , bottom_navy_bar ,urved_navigation_bar , dependencies",
+    tech: "Using Futter ",
     path: "https://github.com/mmmmzxe/coffe_app.git",
     path2:
       "https://www.linkedin.com/posts/mmmmzxe_coffee-shop-mobile-app-framework-flutter-activity-7072686965682253825-WXMh?utm_source=share&utm_medium=member_desktop",
@@ -341,21 +414,21 @@ export const project_content = [
     title: "Online shop",
     image: project12,
     type: "web",
-    tech: "Using React Js & Bootstrap Framework | bootstrap , firebase , font-awesome , otp-input-react , react-hot-toast , react-icons , react-id-swiper , react-otp-input , react-phone-input-2 , react-redux , react-router-dom , react-swiper , redux , swiper ",
+    tech: "Using React Js & Bootstrap Framework  | Site",
     path: "https://github.com/mmmmzxe/store-full-react.git",
   },
   {
     title: "SNC",
     image: project13,
     type: "app",
-    tech: "Using Flutter |  google_maps_flutter , flutter_polyline_points ,  sizer_pro , smooth_page_indicator , flutter_google_places , geocoding , geolocator , location , gender_picker , dob_input_field , dio , carousel_slider , ripple_wave , flutter_map , latlong2 , http , animated_splash_screen , page_transition ",
+    tech: "Using Flutter ",
     path: "https://www.linkedin.com/posts/mmmmzxe_flutter-spicalabrneeds-backend-activity-7206183466915241985-U3OO?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "MU Constructioninc",
     image: project1,
     type: "web",
-    tech: "Using React Js & Bootstrap Framework | bootstrap , email , framer-motion , react-icons , react-scripts , react-scroll-trigger , react-whatsapp , swiper , web-vitals",
+    tech: "Using React Js & Bootstrap Framework | Site",
     path: "https://github.com/mmmmzxe/MU-Real.git",
   },
 ];

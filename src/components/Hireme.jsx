@@ -1,4 +1,3 @@
-
 import { content } from "../Content";
 import { MdLocationCity, MdLocationOn, MdWork } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa";
@@ -32,7 +31,7 @@ const Hireme = () => {
           
           <div
             data-aos="fade-left"
-            className="border-2 w-1/2 m-auto border-dark_primary max-w-l
+            className="border-2 md:w-1/2 w-full m-auto border-dark_primary max-w-2xl
            p-6 shadow-sm rounded-xl rounded-br-[8rem]  flex"
           >
             
@@ -48,13 +47,20 @@ const Hireme = () => {
            <div className="flex"> <FaGraduationCap className="text-white text-3xl mr-3" />
            <p className="text-white py-2 "><span className="text-white py-2 font-bold mr-2">Final Project Graduation : </span>{Hireme.final}</p></div>
             <hr className="text-white"></hr>
-           <div className="flex mt-3"> <MdWork className="text-white text-3xl mr-3"/> <div>
-           <p>{Hireme.exp}</p>
-           <p>{Hireme.exp2}</p>
-           <p>{Hireme.exp3}</p>
-           <p>{Hireme.exp4}</p>
-           <p>{Hireme.exp6}</p>
-           <p>{Hireme.exp5}</p></div></div>
+            <div className="flex mt-3"> 
+              <MdWork className="text-white text-3xl mr-3"/> 
+              <div>
+                <p>✨ {Hireme.exp}</p>
+                <p>✨ {Hireme.exp9}</p>
+                <p>✨ {Hireme.exp2}</p>
+                <p>✨ {Hireme.exp3}</p>
+                <p>✨ {Hireme.exp4}</p>
+                <p>✨ {Hireme.exp5}</p>
+                <p>✨ {Hireme.exp6}</p>
+                <p>✨ {Hireme.exp7}</p>
+                <p>✨ {Hireme.exp8}</p>
+              </div>
+            </div>
             </div>
             <div className=""><img src={Hireme.image3} className="w-[150px]"></img></div>
           </div>

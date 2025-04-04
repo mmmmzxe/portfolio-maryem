@@ -82,9 +82,12 @@ const RecentProjects = () => {
               </div>
               <div className="bottom-bottom">
                 <div className="social-links-container">
-                  <a href={project.path} target="_blank" rel="noopener noreferrer">
-                    <GrGithub className="text-2xl" />
-                  </a>
+                {project.path && (
+  <a href={project.path} target="_blank" rel="noopener noreferrer">
+  <GrGithub className="text-2xl" />
+</a>
+                )}
+                
                   {project.path2 && (
                     <a href={project.path2} target="_blank" rel="noopener noreferrer">
                       <BiNetworkChart className="text-xl" />
@@ -107,7 +110,7 @@ const RecentProjects = () => {
             onClick={handleSeeMore}
             className="px-4 py-2  text-white rounded-lg font-medium hover:bg-t transition-colors"
           >
-            See More
+            See More {project_content.length  - visibleCount}  
           </button>
         </div>
       )}
