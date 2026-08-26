@@ -9,6 +9,8 @@ import github from './assets/images/Skills/git.jpg'
 import firebase from './assets/images/Skills/f.png'
 import wordpress from './assets/images/Skills/w.png';
 import Next from './assets/images/Skills/nextjs.png';
+import reactnative from "./assets/images/Skills/react-native.svg"
+import Node from "./assets/images/Skills/nodejs.svg"
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/2.png";
 import services_logo3 from "./assets/images/Services/3.png";
@@ -49,6 +51,8 @@ import project20 from "./assets/images/projects/20.png";
 import project21 from "./assets/images/projects/21.png";
 import project22 from "./assets/images/projects/22.png";
 import project23 from "./assets/images/projects/23.png";
+import project24 from "./assets/images/projects/24.png";
+
 export const content = {
  
   nav: [
@@ -139,6 +143,18 @@ export const content = {
         para: "Next Js",
         logo: Next,
       },
+      {
+        name:"React Native",
+        para: "",
+        logo: reactnative,
+
+      },
+      {
+        name:"Node JS",
+        para: "",
+        logo: Node,
+
+      }
  
     ],
     icon: MdArrowForward,
@@ -199,15 +215,17 @@ img:va
     pare2:"BA of Management Information Systems",
    Grade: 3.5,
    final:'Special Needs Car (SNC) App | A+',
-   exp:'GDSC Future Academy Core Team | Front-End Developer ,',
-   exp9:'Google Developer Groups Cairo Core Team ,',
-   exp2:'IEEE Future Academy Core Team | Head Front-End ,',
-   exp3:'TECH Geeks club | Head Front-end ,',
-   exp4:'PIONEERS 180 | Head Front-End',
    exp5:'SHADY SYSTEM | Training Flutter 3 Months',
    exp6:'WHERE TECH | web dev 6 Months',
    exp7:'NOT FOUND AGANCY | Front-End Developer ',
    exp8:'BLACK HORSE | Front-End Instractor ',
+   exp9:"RAR-IT | Front-End Developer 7 Months ",
+   exp10:"Your Parts | Software Engineer 7 Month ",
+   exp:'GDSC Future Academy Core Team | Front-End Developer',
+   exp9:'Google Developer Groups Cairo Core Team ,',
+   exp2:'IEEE Future Academy Core Team | Head Front-End ,',
+   exp3:'TECH Geeks club | Head Front-end',
+   exp4:'PIONEERS 180 | Head Front-End',
 
  
    years:" Sep 2020 - Jun 2024",
@@ -255,7 +273,15 @@ img:va
  
 };
 export const project_content = [
+  {
+    title:"Fresh Energy",
+    path2:"https://egyptfreshenergy.com/products ",
+    type:"web",
+    tech:"Using React & Node JS ",
+image:project24
 
+  }
+,
   {
     title: "Not Found Agency",
     image: project16,

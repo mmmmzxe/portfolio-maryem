@@ -50,15 +50,19 @@ const Hireme = () => {
             <div className="flex mt-3"> 
               <MdWork className="text-white text-3xl mr-3"/> 
               <div>
+                 <p>✨ {Hireme.exp9}</p>
+                <p>✨ {Hireme.exp10}</p>
+                <p>✨ {Hireme.exp7}</p>
+                <p>✨ {Hireme.exp8}</p>
+                     <p>✨ {Hireme.exp5}</p>
+                <p>✨ {Hireme.exp6}</p>
                 <p>✨ {Hireme.exp}</p>
                 <p>✨ {Hireme.exp9}</p>
                 <p>✨ {Hireme.exp2}</p>
                 <p>✨ {Hireme.exp3}</p>
                 <p>✨ {Hireme.exp4}</p>
-                <p>✨ {Hireme.exp5}</p>
-                <p>✨ {Hireme.exp6}</p>
-                <p>✨ {Hireme.exp7}</p>
-                <p>✨ {Hireme.exp8}</p>
+           
+
               </div>
             </div>
             </div>
