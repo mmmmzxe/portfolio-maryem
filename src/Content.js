@@ -84,6 +84,7 @@ export const content = {
     btnText: "Hire Me",
     link:pdf,
     image: Hero_person,
+    
     hero_content: [
       {
         count: "3+",
