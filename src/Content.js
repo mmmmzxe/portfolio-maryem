@@ -16,7 +16,7 @@ import services_logo2 from "./assets/images/Services/2.png";
 import services_logo3 from "./assets/images/Services/3.png";
 import services_logo4 from "./assets/images/Services/s.png";
 
-import pdf from './assets/images/Maryem .pdf'
+import pdf from './assets/images/Maryem.pdf'
 import va from '../public/10.png'
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
@@ -52,6 +52,8 @@ import project21 from "./assets/images/Projects/21.png";
 import project22 from "./assets/images/Projects/22.png";
 import project23 from "./assets/images/Projects/23.png";
 import project24 from "./assets/images/Projects/24.png";
+import extrachic from "./assets/images/Projects/25.png";
+import reactPrint from "./assets/images/Projects/print.png";
 
 export const content = {
  
@@ -275,14 +277,27 @@ img:va
 };
 export const project_content = [
   {
+    title: "@mmmmzxe/react-print",
+    image: reactPrint,
+    type: "package",
+    tech: "React JS & TypeScript & NPM & Tailwind CSS",
+    path2: "https://www.npmjs.com/package/@mmmmzxe/react-print",
+    path: "https://github.com/mmmmzxe",
+  },
+  {
+    title: "Extra Chic",
+    image: extrachic,
+    type: "fullstack",
+    tech: "React JS & Node JS & MongoDB",
+    path2: "https://www.extrachic.cloud",
+  },
+  {
     title:"Fresh Energy",
     path2:"https://egyptfreshenergy.com/products ",
-    type:"web",
+    type:"fullstack",
     tech:"Using React & Node JS ",
-image:project24
-
-  }
-,
+    image:project24
+  },
   {
     title: "Not Found Agency",
     image: project16,

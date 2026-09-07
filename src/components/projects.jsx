@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { content, project_content } from "../Content";
 import { GrGithub } from "react-icons/gr";
-import { BiLinkExternal, BiCodeAlt, BiMobileAlt, BiLaptop, BiChevronDown, BiChevronUp } from "react-icons/bi";
+import { BiLinkExternal, BiCodeAlt, BiMobileAlt, BiLaptop, BiPackage, BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { MdOutlineMailOutline } from "react-icons/md";
 
 const RecentProjects = () => {
@@ -32,6 +32,8 @@ const RecentProjects = () => {
   const countAll = project_content.length;
   const countWeb = project_content.filter((p) => p.type === "web").length;
   const countApp = project_content.filter((p) => p.type === "app").length;
+  const countFullStack = project_content.filter((p) => p.type === "fullstack").length;
+  const countPackage = project_content.filter((p) => p.type === "package").length;
 
   const currentVisible = filteredProjects.slice(0, visibleCount);
 
@@ -77,7 +79,7 @@ const RecentProjects = () => {
 
       {/* Filter Navigation Tabs */}
       <div className="flex justify-center mb-12" data-aos="fade-up">
-        <div className="inline-flex p-1.5 rounded-2xl bg-[#171825] border border-white/10 shadow-2xl backdrop-blur-xl">
+        <div className="inline-flex flex-wrap justify-center p-1.5 rounded-2xl bg-[#171825] border border-white/10 shadow-2xl backdrop-blur-xl gap-1">
           <button
             onClick={() => handleFilterChange("all")}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 ${
@@ -89,6 +91,36 @@ const RecentProjects = () => {
             All Projects
             <span className={`px-2 py-0.5 text-xs rounded-full ${filter === "all" ? "bg-white/20 text-white" : "bg-slate-800 text-slate-400"}`}>
               {countAll}
+            </span>
+          </button>
+
+          <button
+            onClick={() => handleFilterChange("package")}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 ${
+              filter === "package"
+                ? "bg-gradient-to-r from-[#ee2c76] to-[#f43f5e] text-white shadow-[0_4px_20px_rgba(238,44,118,0.4)] scale-[1.02]"
+                : "text-slate-400 hover:text-white hover:bg-white/5"
+            }`}
+          >
+            <BiPackage className="text-lg" />
+            NPM Packages
+            <span className={`px-2 py-0.5 text-xs rounded-full ${filter === "package" ? "bg-white/20 text-white" : "bg-slate-800 text-slate-400"}`}>
+              {countPackage}
+            </span>
+          </button>
+
+          <button
+            onClick={() => handleFilterChange("fullstack")}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 ${
+              filter === "fullstack"
+                ? "bg-gradient-to-r from-[#ee2c76] to-[#f43f5e] text-white shadow-[0_4px_20px_rgba(238,44,118,0.4)] scale-[1.02]"
+                : "text-slate-400 hover:text-white hover:bg-white/5"
+            }`}
+          >
+            <BiCodeAlt className="text-lg" />
+            Full Stack
+            <span className={`px-2 py-0.5 text-xs rounded-full ${filter === "fullstack" ? "bg-white/20 text-white" : "bg-slate-800 text-slate-400"}`}>
+              {countFullStack}
             </span>
           </button>
 
@@ -148,8 +180,23 @@ const RecentProjects = () => {
                 {/* Badge Tag */}
                 <div className="absolute top-3 left-3 z-10">
                   <span className="px-3 py-1 text-[11px] font-bold tracking-wider uppercase rounded-full bg-black/70 backdrop-blur-md text-pink-400 border border-pink-500/30 flex items-center gap-1.5 shadow-md">
-                    {project.type === "app" ? <BiMobileAlt /> : <BiLaptop />}
-                    {project.type === "app" ? "Mobile App" : "Web Application"}
+                    {project.type === "app" ? (
+                      <>
+                        <BiMobileAlt /> Mobile App
+                      </>
+                    ) : project.type === "fullstack" ? (
+                      <>
+                        <BiCodeAlt /> Full Stack
+                      </>
+                    ) : project.type === "package" ? (
+                      <>
+                        <BiPackage className="text-[#ee2c76]" /> NPM Package
+                      </>
+                    ) : (
+                      <>
+                        <BiLaptop /> Web Application
+                      </>
+                    )}
                   </span>
                 </div>
 
@@ -161,7 +208,7 @@ const RecentProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3.5 rounded-full bg-[#ee2c76] text-white hover:bg-pink-600 hover:scale-110 transition-all duration-300 shadow-lg"
-                      title="Live Site / Preview"
+                      title={project.type === "package" ? "View on NPM" : "Live Site / Preview"}
                     >
                       <BiLinkExternal className="text-xl" />
                     </a>
@@ -185,6 +232,12 @@ const RecentProjects = () => {
                 <h3 className="text-xl font-bold text-white group-hover:text-pink-400 transition-colors duration-300 line-clamp-1 mb-1">
                   {project.title}
                 </h3>
+
+                {project.type === "package" && (
+                  <div className="mt-1.5 mb-2.5 inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-black/60 border border-[#ee2c76]/30 font-mono text-[11px] text-pink-300 shadow-sm">
+                    <span className="text-[#ee2c76] font-bold">$</span> npm i @mmmmzxe/react-print
+                  </div>
+                )}
                 
                 {renderTechTags(project.tech)}
               </div>
@@ -200,7 +253,7 @@ const RecentProjects = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-pink-400 hover:text-pink-300 transition-colors"
                   >
-                    <span>Visit Site</span>
+                    <span>{project.type === "package" ? "NPM Package" : "Visit Site"}</span>
                     <BiLinkExternal className="text-sm" />
                   </a>
                 )}
