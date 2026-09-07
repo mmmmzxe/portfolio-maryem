@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { content, project_content } from "../Content";
 import { GrGithub } from "react-icons/gr";
 import { BiLinkExternal, BiCodeAlt, BiMobileAlt, BiLaptop, BiPackage, BiChevronDown, BiChevronUp } from "react-icons/bi";
@@ -159,10 +160,12 @@ const RecentProjects = () => {
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {currentVisible.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            data-aos="fade-up"
-            data-aos-delay={(index % 3) * 150}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "50px" }}
+            transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
             className="group relative bg-[#131422]/90 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden shadow-xl hover:shadow-[0_12px_35px_rgba(238,44,118,0.25)] hover:border-[#ee2c76]/50 transition-all duration-500 flex flex-col justify-between"
           >
             <div>
@@ -279,7 +282,7 @@ const RecentProjects = () => {
                 <span>Contact</span>
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
